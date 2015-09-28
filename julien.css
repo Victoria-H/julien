@@ -20,22 +20,27 @@ p {
 }
 
 .container {
+	display: -moz-inline-stack;
 	display: inline-block;
 	width:100%;
 	text-align:center;
-	position: relative;
+	
 	
 }
 
 .container2 {
+	display: -moz-inline-stack;
 	display: inline-block;
     position:relative; /* IMPORTANT */
-	left:50%;	
+	left:50%;
+	width:150px;
+	height:50px;
 	text-align:center;	
-	background-color:blue;
+	
 }
 
 .overlay {
+	display: -moz-inline-stack;
 	display: inline-block;
 	position:absolute; /* IMPORTANT */
 	z-index:5;
