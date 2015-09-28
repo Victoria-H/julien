@@ -1,0 +1,63 @@
+/* css */
+
+body {
+	background-color:black;
+}
+
+h1, p {
+	color:white;
+	font-size:30px;
+	text-align:center;
+}
+
+span{
+	color:red;
+	font-size:16px;
+}
+
+p {
+	font-size:14px;
+}
+
+.container {
+	display: inline-block;
+	width:100%;
+	text-align:center;
+	position: relative;
+	
+}
+
+.container2 {
+	display: inline-block;
+    position:relative; /* IMPORTANT */
+	left:50%;	
+	text-align:center;	
+	background-color:blue;
+}
+
+.overlay {
+	display: inline-block;
+	position:absolute; /* IMPORTANT */
+	z-index:5;
+	left:-50px;
+	top:-150px;
+	
+}
+
+#banana, #circlehover {
+	display:none;
+	
+}
+
+#banana {
+	left:-55px;
+	
+}
+
+#circle {
+	display:block;
+	z-index:10;
+}
+
+
+

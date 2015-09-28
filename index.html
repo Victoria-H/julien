@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="julien.css"/> <!--link to style sheet-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--link to jquery library-->
+</head>
+
+<body>
+<p>Simple illustration of jquery</p>
+<h1>Julien P. <span> click on the circle!!!!</span></h1>
+
+
+<div class="container"> <!--containers are a useful way of formatting--->
+<img src="https://s-media-cache-ak0.pinimg.com/236x/6d/16/07/6d160739d75fac5bd635cc1958cbd6f5.jpg" width="350px">
+</div>
+
+<div class="container2">
+
+<div class="overlay" id="circle">
+<img src="circle.png" width="100px">
+</div>
+<div class="overlay" id="banana">
+<img src="banana.png" width="110px">
+</div>
+
+<div class="overlay" id="circlehover">
+<img src="circlehover.png" width="100px">
+</div> <!--end of container2-->
+
+<!--this is the beginning of the javascript-->
+<script>
+
+//this makes the semi-opaque circle image appear on mouseover
+$("#circle").hover(function(){
+		 $("#circlehover").css("display", "block");
+		 },
+	 function() {
+         $("#circlehover").css("display", "none");
+});
+	 
+// this makes the circle disappear and the banana appear
+$("#circle").click(function() {
+	$(".overlay").css("display","none");
+	$("#banana").css("display","block");
+});
+</script>
+<!--end of javascript-->
+
+
+</div>
+
+
+</body>
+
+</html>
